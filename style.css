@@ -1,0 +1,124 @@
+/*------------INITIAL SETUP--------------*/
+*, *::before, *::after {
+    box-sizing:inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px; /*1rem */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+/*----------REUSABLE-------------------*/
+.container {
+    width: 80%;
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row--reverse {
+    flex-direction: row-reverse;
+}
+
+/*-------------SECTION HEADER-------------*/
+.header {
+    background-color: #F3EED9;
+    min-height: 660px;
+    text-align: center;
+
+    /*this makes .header__text to stretch to the height of the header*/
+    display: flex;
+}
+
+.header__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title--primary {
+    font-size: 6rem;
+    font-family: 'Playfair Display', serif;
+    color: #824936;
+    width: 72%;
+}
+
+.header__title--secondary {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .6em;
+    word-spacing: .3em;
+    margin-bottom: 1em;
+
+    order: -1;
+}
+
+/*-------------SECTION INTRO-------------*/
+.section-intro {
+    padding: 10em 0;
+    text-align: center;
+}
+
+.section-intro__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.6rem;
+    color: #824936;
+    margin-bottom: 1em;
+}
+
+.section-intro__text {
+    font-size: 2.1rem;
+    width: 47%;
+    text-align: left;
+    line-height: 165%;
+}
+
+/*--------------SECTION-PICTURES-----------*/
+.section-pictures {
+    color: #F3EED9;
+    padding: 10rem 0;
+}
+
+.section-pictures--dark {
+    background-color: #222C2A;
+}
+
+.section-pictures--brown {
+    background-color: #824936;
+}
+.section-pictures__text-wrapper {
+    width: 47%;
+}
+
+.section-pictures__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.6rem;
+    margin-bottom: 1em;
+}
+
+.section-pictures__text {
+    font-size: 2.1rem;
+    line-height: 165%;
+
+}
+
+.section-pictures__img {
+    width: 47%;
+}
